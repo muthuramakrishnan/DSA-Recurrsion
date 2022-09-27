@@ -30,12 +30,11 @@ public class LetterTilePossibilities {
             }
         }
     }
-    public static int numTilePossibilities(String tiles) {
+    public static void numTilePossibilities(String tiles) {
         StringBuffer ipString = new StringBuffer(tiles);
         int idx=0;
         // char[] auxArr = new char[ipString.length()];
         getTilePossibilities(ipString, ipString.length(), idx);
-        return tileCount;
     }
     public static void main(String[] args){
         Scanner s = new Scanner(System.in);
