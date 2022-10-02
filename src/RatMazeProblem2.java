@@ -13,7 +13,7 @@ public class RatMazeProblem2 {
         return (arr[i][j] == 2 || arr[i][j] == 0) && !visitedIdxs.contains(temp);
     }
 
-    public static void getAllPermutations(int[][] arr, int m, int n, int i, int j, Set<Integer> visitedIdxs, List<Map.Entry<Integer, Integer>> auxList, List<List<Map.Entry<Integer, Integer>>> outputList) {
+        public static void getAllPermutations(int[][] arr, int m, int n, int i, int j, Set<Integer> visitedIdxs, List<Map.Entry<Integer, Integer>> auxList, List<List<Map.Entry<Integer, Integer>>> outputList) {
         Map.Entry<Integer, Integer> entry = new AbstractMap.SimpleEntry<>(i, j);
         auxList.add(entry);
 
